@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TaskManagerConfigApplication",
+            "request": "launch",
+            "mainClass": "com.github.valsesia.task_manager_config.TaskManagerConfigApplication"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TaskManagerBeMsApplication<task-manager-be-ms>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.github.valsesia.task_manager_be_ms.TaskManagerBeMsApplication",
+            "projectName": "task-manager-be-ms",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-TaskManagerConfigApplication<task-manager-config>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.github.valsesia.task_manager_config.TaskManagerConfigApplication",
+            "projectName": "task-manager-config",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

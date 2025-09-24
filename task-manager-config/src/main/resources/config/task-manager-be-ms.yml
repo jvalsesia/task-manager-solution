@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+    datasource:
+      url: jdbc:postgresql://localhost:5432/mydatabase
+      usernamse: myuser
+      password: secret
+      driver-class-name: org.postgresql.Driver
+
+task-manager:
+  message: "Welcome to Task Manager related local APIs "
+  contactDetails:
+    name: "Julio Valsesia - Software Engineer"
+    email: "jvalsesia@gmail.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
