@@ -1,6 +1,6 @@
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { CompleteDto, TaskDto } from '../task/task.model';
+import { CompleteDto, TaskDto, TaskPayload } from '../task/task.model';
 
 @Injectable({
   providedIn: 'root'
@@ -91,6 +91,20 @@ export class TasksService {
       },
       error: (error) => {
         console.error('Error deleting task:', error);
+      }
+    });
+  }
+
+
+  createTask(task: TaskPayload): void {
+    this.httpClient.post<TaskDto>(`${this.apiUrl}/create`, task).subscribe({
+      next: (createdTask) => {
+        // Update the local signal to include the newly created task
+        this.tasksSignal.set([...this.tasksSignal(), createdTask]);
+        console.log('Task created successfully:', createdTask);
+      },
+      error: (error) => {
+        console.error('Error creating task:', error);
       }
     });
   }

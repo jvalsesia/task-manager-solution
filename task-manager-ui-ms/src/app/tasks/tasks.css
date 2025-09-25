@@ -8,3 +8,27 @@ ul {
     max-height: 80vh;
     overflow: auto;
 }
+
+
+/* In your CSS file */
+.button-container {
+    display: flex;
+    gap: 10px;
+    /* Adds space between buttons */
+}
+
+.button-container button {
+    flex: 1;
+    /* Each button takes up an equal share of the space */
+    padding: 10px;
+}
+
+.buttons {
+
+    text-align: right;
+    margin: 0;
+    width: 150px;
+    display: flex;
+
+
+}

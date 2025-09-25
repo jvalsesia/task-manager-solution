@@ -1,7 +1,15 @@
 <section id="tasks">
+    @if (isAddingTask) {
+    <app-newtask (cancel)="onCancelAddTask()" (addTask)="onAddTask($event)" />
+    }
+
     <header>
         <h1>Tasks</h1>
-
+        <div class="button-container">
+            <p class="buttons">
+                <button (click)="onStartAddTask()">Add Task</button>
+            </p>
+        </div>
 
     </header>
     <ul>

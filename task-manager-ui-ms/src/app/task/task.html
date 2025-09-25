@@ -4,14 +4,12 @@
     <h3>Completed: {{ taskData().completed }}</h3>
     <div class="button-container">
         <p class="buttons">
-            <button class="button-completed" [disabled]="taskData().completed"
-                (click)="onCompleteTask()">Complete</button>
+            <button [disabled]="taskData().completed" (click)="onCompleteTask()">Complete</button>
         <p class="buttons">
-            <button class="button-uncompleted" [disabled]="!taskData().completed"
-                (click)="onUncompleteTask()">Uncomplete</button>
+            <button [disabled]="!taskData().completed" (click)="onUncompleteTask()">Uncomplete</button>
         </p>
         <p class="buttons">
-            <button class="button-deleted" (click)="onDeleteTask()">Delete</button>
+            <button (click)="onDeleteTask()">Delete</button>
         </p>
     </div>
 </article>

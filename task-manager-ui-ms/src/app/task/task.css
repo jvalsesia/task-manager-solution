@@ -33,27 +33,3 @@ article {
 
 
 }
-
-.button-completed {
-    background-color: #0fdd6c;
-}
-
-.button-completed:hover {
-    background-color: #07744a;
-}
-
-.button-uncompleted {
-    background-color: #dfee0d;
-}
-
-.button-uncompleted:hover {
-    background-color: #7c7110;
-}
-
-.button-deleted {
-    background-color: #ec0e0e;
-}
-
-.button-deleted:hover {
-    background-color: #741c1c;
-}
