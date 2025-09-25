@@ -1,0 +1,59 @@
+article {
+    padding: 1rem;
+    color: #25113d;
+    background-color: #e5e4e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+
+/* In your CSS file */
+.button-container {
+    display: flex;
+    gap: 10px;
+    /* Adds space between buttons */
+}
+
+.button-container button {
+    flex: 1;
+    /* Each button takes up an equal share of the space */
+    padding: 10px;
+}
+
+.buttons {
+
+    text-align: right;
+    margin: 0;
+    width: 150px;
+    display: flex;
+
+
+}
+
+.button-completed {
+    background-color: #0fdd6c;
+}
+
+.button-completed:hover {
+    background-color: #07744a;
+}
+
+.button-uncompleted {
+    background-color: #dfee0d;
+}
+
+.button-uncompleted:hover {
+    background-color: #7c7110;
+}
+
+.button-deleted {
+    background-color: #ec0e0e;
+}
+
+.button-deleted:hover {
+    background-color: #741c1c;
+}

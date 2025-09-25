@@ -1,0 +1,13 @@
+<section id="tasks">
+    <header>
+        <h1>Tasks</h1>
+
+
+    </header>
+    <ul>
+        @for(task of getTasks(); track task.id) {
+        <app-task [taskData]="task" />
+        }
+
+    </ul>
+</section>
